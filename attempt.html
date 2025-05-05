@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Accessible Components: Dropdown Menus</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="page-container">
+  
+  <!-- Heading box with large title and small nav -->
+  <div class="heading-box">
+    <h1>Accessible Components: An Analysis of Dropdown Menus</h1>
+    <div class="nav">
+      <a href="#">Home</a>
+      <a href="#">State Model + Redesign</a>
+    </div>
+  </div>
+
+  <!-- Translucent green box for screenshot cards (part 1, part 2) -->
+  <div class="card-container">
+    <!-- Card 1 -->
+    <div class="card" data-card-index="0">
+      <div class="card-img-wrapper">
+        <img src="https://placeimg.com/300/200/nature" alt="Placeholder 1" />
+        <div class="carousel-controls">
+          <button class="prev-btn">&lt;</button>
+          <span class="carousel-index">1/3</span>
+          <button class="next-btn">&gt;</button>
+        </div>
+      </div>
+      <div class="card-short-caption">
+        <strong>Dropdown Menu: Apple</strong><br />
+        Short caption for the current image goes here.
+      </div>
+      <div class="card-long-caption">
+        <p>
+          <strong>Extended Info (Apple):</strong><br>
+          This longer description does not change while cycling through images.
+          It can contain more in-depth details about the dropdown menu’s design.
+        </p>
+      </div>
+      <div class="expand-toggle">
+        <span class="mdi--arrow-down-drop"></span>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card" data-card-index="1">
+      <div class="card-img-wrapper">
+        <img src="https://placeimg.com/301/200/nature" alt="Placeholder 2" />
+        <div class="carousel-controls">
+          <button class="prev-btn">&lt;</button>
+          <span class="carousel-index">1/3</span>
+          <button class="next-btn">&gt;</button>
+        </div>
+      </div>
+      <div class="card-short-caption">
+        <strong>Dropdown Menu: Firefox</strong><br />
+        Short caption for the current image goes here.
+      </div>
+      <div class="card-long-caption">
+        <p>
+          <strong>Extended Info (Firefox):</strong><br>
+          More details about Firefox’s dropdown menu. This text stays the same
+          even if you click next/prev to change images above.
+        </p>
+      </div>
+      <div class="expand-toggle">
+        <span class="mdi--arrow-down-drop"></span>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card" data-card-index="2">
+      <div class="card-img-wrapper">
+        <img src="https://placeimg.com/302/200/nature" alt="Placeholder 3" />
+        <div class="carousel-controls">
+          <button class="prev-btn">&lt;</button>
+          <span class="carousel-index">1/3</span>
+          <button class="next-btn">&gt;</button>
+        </div>
+      </div>
+      <div class="card-short-caption">
+        <strong>Dropdown Menu: Discord</strong><br />
+        Short caption for the current image goes here.
+      </div>
+      <div class="card-long-caption">
+        <p>
+          <strong>Extended Info (Discord):</strong><br>
+          Here’s some expanded commentary on Discord’s dropdown menu styling.
+          The user can still click through images above.
+        </p>
+      </div>
+      <div class="expand-toggle">
+        <!-- <span class="mdi--arrow-down-drop"></span> -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m7 15l5-5l5 5z"/></svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- Heading: "State Model" (or anything else) -->
+  <div class="state-model-box">
+    <h2>State Model</h2>
+    <p>Additional content or redesign notes go here...</p>
+  </div>
+
+  <!-- Translucent green box for state models -->
+  <div class="card-container">
+    <div class="card" data-card-index="0">
+      <div class="card-img-wrapper">
+        <img src="https://placeimg.com/300/200/nature" alt="Placeholder 1" />
+        <div class="carousel-controls">
+          <button class="prev-btn">&lt;</button>
+          <span class="carousel-index">1/3</span>
+          <button class="next-btn">&gt;</button>
+        </div>
+      </div>
+    </div>
+    <div class="card" data-card-index="0">
+      <div class="card-img-wrapper">
+        <img src="https://placeimg.com/300/200/nature" alt="Placeholder 1" />
+        <div class="carousel-controls">
+          <button class="prev-btn">&lt;</button>
+          <span class="carousel-index">1/3</span>
+          <button class="next-btn">&gt;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Second big box for "State Model" (or anything else) -->
+  <div class="state-model-box">
+    <h2>Redesign</h2>
+    <p>Additional content or redesign notes go here...</p>
+  </div>
+
+  <!-- Translucent green box for state models -->
+  <div class="card-container">
+    <div class="card" data-card-index="0">
+      <div class="card-img-wrapper">
+        <img src="https://placeimg.com/300/200/nature" alt="Placeholder 1" />
+        <div class="carousel-controls">
+          <button class="prev-btn">&lt;</button>
+          <span class="carousel-index">1/3</span>
+          <button class="next-btn">&gt;</button>
+        </div>
+      </div>
+    </div>
+    <div class="card" data-card-index="0">
+      <div class="card-img-wrapper">
+        <img src="https://placeimg.com/300/200/nature" alt="Placeholder 1" />
+        <div class="carousel-controls">
+          <button class="prev-btn">&lt;</button>
+          <span class="carousel-index">1/3</span>
+          <button class="next-btn">&gt;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div> <!-- .page-container -->
+
+<script>
+/**
+ * Example data for each card’s images and short captions.
+ * You can replace these with real URLs & texts.
+ * Each entry in images[] has { src, caption }.
+ */
+const cardData = [
+  {
+    images: [
+      {
+        src: "https://placeimg.com/300/200/nature",
+        caption: "Dropdown Menu: Apple - Image 1 short caption"
+      },
+      {
+        src: "https://placeimg.com/300/201/nature",
+        caption: "Dropdown Menu: Apple - Image 2 short caption"
+      },
+      {
+        src: "https://placeimg.com/300/202/nature",
+        caption: "Dropdown Menu: Apple - Image 3 short caption"
+      }
+    ]
+  },
+  {
+    images: [
+      {
+        src: "https://placeimg.com/301/200/nature",
+        caption: "Dropdown Menu: Firefox - Image 1 short caption"
+      },
+      {
+        src: "https://placeimg.com/301/201/nature",
+        caption: "Dropdown Menu: Firefox - Image 2 short caption"
+      },
+      {
+        src: "https://placeimg.com/301/202/nature",
+        caption: "Dropdown Menu: Firefox - Image 3 short caption"
+      }
+    ]
+  },
+  {
+    images: [
+      {
+        src: "https://placeimg.com/302/200/nature",
+        caption: "Dropdown Menu: Discord - Image 1 short caption"
+      },
+      {
+        src: "https://placeimg.com/302/201/nature",
+        caption: "Dropdown Menu: Discord - Image 2 short caption"
+      },
+      {
+        src: "https://placeimg.com/302/202/nature",
+        caption: "Dropdown Menu: Discord - Image 3 short caption"
+      }
+    ]
+  }
+];
+
+// Initialize each card’s carousel and expand toggle
+document.querySelectorAll('.card').forEach((cardElem) => {
+  const cardIndex = parseInt(cardElem.getAttribute('data-card-index'), 10);
+  const data = cardData[cardIndex];
+  let currentImageIndex = 0;
+
+  // Elements inside the card
+  const imgEl = cardElem.querySelector('.card-img-wrapper img');
+  const shortCaptionEl = cardElem.querySelector('.card-short-caption');
+  const indexSpan = cardElem.querySelector('.carousel-index');
+  const prevBtn = cardElem.querySelector('.prev-btn');
+  const nextBtn = cardElem.querySelector('.next-btn');
+  const expandToggleEl = cardElem.querySelector('.expand-toggle');
+
+  // Utility: update the card’s displayed image & short caption
+  function updateCard() {
+    const imageObj = data.images[currentImageIndex];
+    imgEl.src = imageObj.src;
+    shortCaptionEl.innerHTML = `<strong>${imageObj.caption.split(' - ')[0]}</strong><br>
+      ${imageObj.caption.split(' - ')[1] || ''}`;
+    indexSpan.textContent = `${currentImageIndex + 1}/${data.images.length}`;
+  }
+
+  // Next/Prev button clicks
+  prevBtn.addEventListener('click', () => {
+    currentImageIndex = (currentImageIndex - 1 + data.images.length) % data.images.length;
+    updateCard();
+  });
+  nextBtn.addEventListener('click', () => {
+    currentImageIndex = (currentImageIndex + 1) % data.images.length;
+    updateCard();
+  });
+
+  // Expand/Collapse toggle
+  expandToggleEl.addEventListener('click', () => {
+    // Toggle 'expanded' class on the card
+    cardElem.classList.toggle('expanded');
+    // Flip the arrow between ▼ and ▲
+    expandToggleEl.innerHTML =
+    //  cardElem.classList.contains('expanded') ? '&#9650;' : '&#9660;';
+      cardElem.classList.contains('expanded') ? '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m7 10l5 5l5-5z"/></svg>' : '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m7 15l5-5l5 5z"/></svg>' ;
+  });
+
+  // Initialize with first image
+  updateCard();
+});
+</script>
+</body>
+</html>
